@@ -11,12 +11,14 @@ function pg_connection_string_from_database_url() {
    }
    
    $sql =<<<EOF
-     
-      CREATE TABLE SINHVIEN
+      CREATE TABLE COMPANY2
       (ID INT PRIMARY KEY     NOT NULL,
-      USERNAME           CHAR(50)    NOT NULL,
-      PASSWORD           CHAR(50)     NOT NULL);
+      NAME           TEXT    NOT NULL,
+      AGE            INT     NOT NULL,
+      ADDRESS        CHAR(50),
+      SALARY         REAL);
 EOF;
+
 
    $ret = pg_query($db, $sql);
    if(!$ret){

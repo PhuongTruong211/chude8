@@ -26,4 +26,3 @@ function pg_connection_string_from_database_url() {
 <html>
 <bode> <br> <a href="index.php"> HOME </a> </body>
 </html>
-
